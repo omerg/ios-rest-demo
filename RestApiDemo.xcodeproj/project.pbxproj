@@ -82,8 +82,8 @@
 		773CB0F5192A5F3F006C12B0 = {
 			isa = PBXGroup;
 			children = (
-				773CB107192A5F3F006C12B0 /* RerstApiDemo */,
-				773CB126192A5F3F006C12B0 /* RerstApiDemoTests */,
+				773CB107192A5F3F006C12B0 /* RestApiDemo */,
+				773CB126192A5F3F006C12B0 /* RestApiDemoTests */,
 				773CB100192A5F3F006C12B0 /* Frameworks */,
 				773CB0FF192A5F3F006C12B0 /* Products */,
 			);
@@ -109,7 +109,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		773CB107192A5F3F006C12B0 /* RerstApiDemo */ = {
+		773CB107192A5F3F006C12B0 /* RestApiDemo */ = {
 			isa = PBXGroup;
 			children = (
 				773CB110192A5F3F006C12B0 /* RestApiDemoAppDelegate.h */,
@@ -120,6 +120,7 @@
 				773CB119192A5F3F006C12B0 /* Images.xcassets */,
 				773CB108192A5F3F006C12B0 /* Supporting Files */,
 			);
+			name = RestApiDemo;
 			path = RerstApiDemo;
 			sourceTree = "<group>";
 		};
@@ -134,12 +135,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		773CB126192A5F3F006C12B0 /* RerstApiDemoTests */ = {
+		773CB126192A5F3F006C12B0 /* RestApiDemoTests */ = {
 			isa = PBXGroup;
 			children = (
 				773CB12C192A5F3F006C12B0 /* RerstApiDemoTests.m */,
 				773CB127192A5F3F006C12B0 /* Supporting Files */,
 			);
+			name = RestApiDemoTests;
 			path = RerstApiDemoTests;
 			sourceTree = "<group>";
 		};
