@@ -15,15 +15,13 @@
 @implementation RestApiDemoViewController {
     NSArray *tableData;
 }
-@synthesize abc = _abc;
+@synthesize tableView = _tableView;
 @synthesize accountList = _accountList;
 
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    // Initialize table data
-    tableData = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
-
+    
     // Create the REST call string.
     NSInteger i = 1;
     NSString *restCallString = [NSString stringWithFormat:@"http://lucidcode-web-services.herokuapp.com/ajax/listAllPagified?pageNum=%d", (integer_t)i];
@@ -41,7 +39,7 @@
                                                                                       options:0
                                                                                         error:NULL];
                                    NSLog(@"listOfAccounts = %@", [self.accountList objectForKey:@"accountList"]);
-                                   [self.abc reloadData];
+                                   [self.tableView reloadData];
                                }
                            }];
 }
@@ -62,11 +60,6 @@
     cell.textLabel.text = [[[self.accountList objectForKey:@"accountList"]objectAtIndex:indexPath.row] objectForKey:@"name"];
     return cell;
     
-//NSLog(@"listOfAccounts = %@", [[self.accountList objectAtIndex:indexPath.row] objectForKey:@"name"]);
-
-    
-//    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
-//    return cell;
 }
 
 @end

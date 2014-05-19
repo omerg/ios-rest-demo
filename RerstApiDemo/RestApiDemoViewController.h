@@ -10,6 +10,6 @@
 
 @interface RestApiDemoViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>;
 
-@property (weak, nonatomic) IBOutlet UITableView *abc;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
